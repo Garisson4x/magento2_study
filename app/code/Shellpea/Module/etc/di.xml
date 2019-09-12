@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Catalog\Api\Data\ProductInterface">
+        <plugin name="ProductPrice" type="Shellpea\Module\Plugin\ProductPrice" sortOrder="1" disabled="false"/>
+    </type>
+    <type name="Magento\Theme\Block\Html\Footer">
+        <plugin name="CostomFooter" type="Shellpea\Module\Plugin\CostomFooter" sortOrder="1" disabled="false" />
+    </type>
+    <type name="Magento\Theme\Block\Html\Breadcrumbs">
+        <plugin name="CostomBread" type="Shellpea\Module\Plugin\CostomBread" sortOrder="1" disabled="false" />
+    </type>
+</config>
