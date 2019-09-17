@@ -13,10 +13,7 @@ class RecordHtml implements ObserverInterface
 	public function execute(\Magento\Framework\Event\Observer $observer)
 	{
         $response = $observer->getEvent()->getResponse();
-		ob_start();
-		echo $response."\n",FILE_APPEND;
-		$html = ob_get_contents();
-		ob_end_clean();
+		$html = $response->getBody();
 		$this->logger->info($html);
 	}
 }
