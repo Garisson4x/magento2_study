@@ -5,7 +5,7 @@
             <block class="Magento\Framework\View\Element\Template" name="customtext" template="Shellpea_Content::index.phtml" />
         </referenceContainer>
         <referenceBlock name="top.links">
-            <block class="Shellpea\Content\Block\Link" name="add-new-header-link">
+            <block class="Magento\Framework\View\Element\Html\Link" name="add-new-header-link">
                 <arguments>
                     <argument name="label" xsi:type="string" translate="true">My Content</argument>
                     <argument name="path" xsi:type="string" translate="true">content</argument>
