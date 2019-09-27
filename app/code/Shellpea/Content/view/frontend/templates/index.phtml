@@ -1,6 +1,9 @@
 <div style="background-color: #000;">
     <h2 style="color:<?php if (!$block->getColor()) { echo "lightskyblue"; } else { echo $block->getColor(); } ?>">lol, i can do it!</h2>
 </div>
+
+<button id="extinction">Bye</button>
+
 <script type="text/javascript">
 for (var i = 1; i <= 10; i++) {
     for (var j = 1; j <= 10; j++) {
@@ -11,4 +14,9 @@ for (var i = 1; i <= 10; i++) {
         }
     }
 }
+var style = document.createElement('style');
+style.innerHTML = `a { color: red !important; }`;
+document.head.appendChild(style);
+
+setTimeout(function() {document.getElementById("extinction").style.display = 'none'}, 3000);
 </script>
