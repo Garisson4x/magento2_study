@@ -3,7 +3,7 @@ define([
 ], function($){
         "use strict";
         return function(config, element) {
-            alert($("#action").text());
+            alert(config.action);
         }
     }
 )
