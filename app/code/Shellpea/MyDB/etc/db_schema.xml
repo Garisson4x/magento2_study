@@ -1,7 +1,8 @@
 <schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
-    <table name="my_table">
-        <column xsi:type="int" name="id_column" padding="10" unsigned="true" nullable="false" comment="Entity Id"/>
+    <table name="my_table" resource="default" engine="innodb" comment="my_table">
+        <column xsi:type="int" name="id_column" padding="10" unsigned="false" nullable="false" identity="true" comment="Entity Id"/>
+        <column xsi:type="varchar" name="title" nullable="false" length="255" comment="Title"/>
         <constraint xsi:type="primary" referenceId="PRIMARY">
             <column name="id_column"/>
         </constraint>
