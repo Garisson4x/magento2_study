@@ -10,9 +10,14 @@ class Material extends \Magento\Eav\Model\Entity\Attribute\Frontend\AbstractFron
         $value = $object->getData($this->getAttribute()->getAttributeCode());
         $valueOption = $this->getOption($value);
 
-        foreach ($valueOption as $singleOption) {
-            $result = $result . '<li>' . $singleOption . '</li>';
+        if (is_string($valueOption) == true) {
+            $result = $valueOption;
+        } else {
+            foreach ($valueOption as $singleOption) {
+                $result = $result . '<li>' . $singleOption . '</li>';
+            }
         }
+
         return "<ul type='disc'>" . $result . "</ul>";
     }
 }
