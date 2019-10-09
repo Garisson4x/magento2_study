@@ -217,6 +217,7 @@ return [
         'Shellpea_Module2' => 1,
         'Shellpea_MultiselectAttr' => 1,
         'Shellpea_MyDB' => 1,
+        'Shellpea_PriorityAttr' => 1,
         'Temando_Shipping' => 1,
         'Vertex_Tax' => 1
     ]
