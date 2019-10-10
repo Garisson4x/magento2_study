@@ -25,8 +25,8 @@ class UpgradeData implements UpgradeDataInterface
         $eavSetup->updateAttribute(
             \Magento\Customer\Model\Customer::ENTITY,
             'priority',
-            'source_model',
-            'Shellpea\PriorityAttr\Model\Customer\Attribute\Source\Material'
+            'is_system',
+            false
         );
         $setup->endSetup();
     }
