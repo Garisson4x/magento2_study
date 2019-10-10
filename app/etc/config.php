@@ -212,6 +212,7 @@ return [
         'Klarna_Kp' => 1,
         'Magento_PaypalReCaptcha' => 1,
         'MSP_TwoFactorAuth' => 1,
+        'Shellpea_ListProduct' => 1,
         'Shellpea_Module' => 1,
         'Shellpea_Module2' => 1,
         'Temando_Shipping' => 1,
