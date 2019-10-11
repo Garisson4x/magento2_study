@@ -1,0 +1,6 @@
+<?php
+foreach ($block->getCustomerList() as $customer)
+{
+    echo get_class($customer),"</br>";
+    echo $customer->getFirstName(),"</br>";
+};
