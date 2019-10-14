@@ -213,6 +213,7 @@ return [
         'Magento_PaypalReCaptcha' => 1,
         'MSP_TwoFactorAuth' => 1,
         'Shellpea_ListCustomer' => 1,
+        'Shellpea_ListEmploye' => 1,
         'Shellpea_ListProduct' => 1,
         'Shellpea_Module' => 1,
         'Shellpea_Module2' => 1,
